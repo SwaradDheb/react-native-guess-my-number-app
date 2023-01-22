@@ -9,7 +9,7 @@ export default function App() {
   function pickedNumberHandler(pickedNumber){
       setUserNumber(pickedNumber);
   }
-  let screen =<StartGameScreen/>;
+  let screen =<StartGameScreen onPickNumber={pickedNumberHandler}/>;
   if(userNumber){
     screen=<GameScreen/>
   }
